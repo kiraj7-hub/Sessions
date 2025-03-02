@@ -1,2 +1,4 @@
 FE
- 1. dnf install nginx -y 
+1. dnf install nginx -y 
+2. systemctl disable nginx
+3. systemctl enable nginx
