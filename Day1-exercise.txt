@@ -1,4 +1,10 @@
 FE
 1. dnf install nginx -y 
-2. systemctl disable nginx
-3. systemctl enable nginx
+2. systemctl enable nginx
+3. systemctl start nginx
+4. rm -rf /usr/share/nginx/html/* - remove default content and index
+5. curl -o /tmp/frontend.zip https://expense-artifacts.s3.amazonaws.com/expense-frontend-v2.zip
+6.cd /usr/share/nginx/html 
+7. unzip /tmp/frontend.zip
+8. vim /etc/nginx/default.d/expense.conf
+
